@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>TryOnce Dashboard</title>
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    
+    </head>
+<body>
+    
+    <div class="sidebar">
+    <div class="sidebar-brand">
+        <h2><span class=""></span>TryOnce</h2>
+    </div>    
+    <div class="sidebar-menu">
+        <ul>           
+            <li>
+               <a href="index.html"><span class="las la-igloo"></span><span>Dashboard</span></a>
+            </li>    
+        
+            <li>
+               <a href="customer.html"><span class="las la-user"></span><span>Customers</span></a>
+            </li>    
+        
+            <li>
+               <a href="order.html"><span class="las la-clipboard-list"></span><span>Orders</span></a>
+            </li>    
+        
+            <li>
+               <a href="payment.html"><span class="las la-wallet"></span><span>Payments</span></a>
+            </li>    
+        
+            <li>
+               <a href="product.html"><span class="las la-shopping-bag"></span><span>Products</span></a>
+            </li>    
+        </ul>
+    </div>
+    </div>
+    
+    <div class="main-content">
+    <header>
+        <h2>
+        <label for="">
+                <span class="las la-bars"></span>
+        </label>    
+            Add Customer
+        </h2>
+    <div class="search-wrapper">
+            <span class="las la-search"></span>
+            <input type="search" placeholder="Search here"   />
+    </div>
+    <div class="user-wrapper">
+            <img src="img/2.png" width="40px" height="40px" alt="">
+    <div>
+            <h4>Sajith Erat</h4>
+            <small>Admin</small>
+    </div>
+        </div>
+       </header>
+      </div>
+    
+    
+    
+   <div class="add-product">
+      <div class="testbox">
+      <form action="">
+        
+        <div class="item">
+          <p>Customer ID</p>
+          <input type="text" name="customerid" placeholder="631651656" />
+        </div>
+        <div class="item">
+          <p>Name</p>
+          <input type="text" name="customername" placeholder="User Name" />
+        </div>
+        <div class="item">
+          <p>Mobile</p>
+          <input type="text" name="mobile" placeholder="+91 8129941072" />
+        </div>
+        <div class="item">
+          <p>Email</p>
+          <input type="email" name="email" placeholder="Email" />
+        </div>
+        <div class="item">
+          <p>Region</p>
+          <select>
+            <option value="">Select</option>
+            <option value="1">region1</option>
+            <option value="2">region2</option>
+            <option value="3">region3</option>
+            <option value="4">region4</option>
+            <option value="5">region5</option>
+          </select>
+        </div>
+        <div class="item">
+          <p>Route</p>
+          <select>
+            <option value="">Select</option>
+            <option value="1">route1</option>
+            <option value="2">route2</option>
+            <option value="3">route3</option>
+            <option value="4">route4</option>
+            <option value="5">route5</option>
+          </select>
+        </div>
+        <div class="item">
+          <p>Location Coordinates</p>
+          <input type="text" name="quantity"/>
+        </div>
+        <div class="item">
+          <p>Venue Address</p>
+          <input type="text" name="name" placeholder="House No/ Name" />
+          <input type="text" name="name" placeholder="Address Line 1" />
+           <input type="text" name="name" placeholder="Address Line 2" />
+            <input type="text" name="name" placeholder="Postal / Zip code" />
+        </div><br><br>
+        <div class="question">
+          <p>Status</p>
+          <div class="question-answer">
+            <div>
+              <input type="radio" value="none" id="radio_1" name="status" />
+              <label for="radio_1" class="radio"><span>Live</span></label>
+            </div>
+            <div>
+              <input type="radio" value="none" id="radio_2" name="status" />
+              <label for="radio_2" class="radio"><span>Test</span></label>
+            </div>
+          </div>
+        </div><br><br><br>
+        <div class="question">
+          <p>Paytype</p>
+          <div class="question-answer">
+            <div>
+              <input type="radio" value="none" id="radio_1" name="paytype" />
+              <label for="radio_1" class="radio"><span>Prepaid</span></label>
+            </div>
+            <div>
+              <input type="radio" value="none" id="radio_2" name="paytype" />
+              <label for="radio_2" class="radio"><span>Postpaid</span></label>
+            </div>
+          </div>
+        </div><br><br><br>
+        <div class="question">
+          <p>Sample</p>
+          <div class="question-answer">
+            <div>
+              <input type="radio" value="none" id="radio_1" name="sample" />
+              <label for="radio_1" class="radio"><span>Yes</span></label>
+            </div>
+            <div>
+              <input type="radio" value="none" id="radio_2" name="sample" />
+              <label for="radio_2" class="radio"><span>No</span></label>
+            </div>
+          </div>
+        </div><br>
+          
+          <div class="customer-check-alert">
+    <p><strong>Please note:</strong> Check if this customer is already enrolled using mobile/name/address</p>
+  </div>
+          
+          
+          
+                <div class="btn-block">
+          <button type="submit" href="">Add Customer</button>
+        </div>
+      </form>
+    </div>      
+    </div> 
+    
+    
+    
+    
+    
+    
+</body>    
+</html>

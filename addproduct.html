@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>TryOnce Dashboard</title>
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="sidebar">
+    <div class="sidebar-brand">
+        <h2><span class=""></span>TryOnce</h2>
+    </div>    
+    <div class="sidebar-menu">
+        <ul>           
+            <li>
+               <a href="index.html"><span class="las la-igloo"></span><span>Dashboard</span></a>
+            </li>    
+        
+            <li>
+               <a href="customer.html"><span class="las la-user"></span><span>Customers</span></a>
+            </li>    
+        
+            <li>
+               <a href="order.html"><span class="las la-clipboard-list"></span><span>Orders</span></a>
+            </li>    
+        
+            <li>
+               <a href="payment.html"><span class="las la-wallet"></span><span>Payments</span></a>
+            </li>    
+        
+            <li>
+               <a href="product.html"><span class="las la-shopping-bag"></span><span>Products</span></a>
+            </li>    
+        </ul>
+    </div>
+    </div>
+    
+    <div class="main-content">
+    <header>
+        <h2>
+        <label for="">
+                <span class="las la-bars"></span>
+        </label>    
+            Add Product
+        </h2>
+    <div class="search-wrapper">
+            <span class="las la-search"></span>
+            <input type="search" placeholder="Search here"   />
+    </div>
+    <div class="user-wrapper">
+            <img src="img/2.png" width="40px" height="40px" alt="">
+    <div>
+            <h4>Sajith Erat</h4>
+            <small>Admin</small>
+    </div>
+        </div>
+        </header>
+    </div>
+    
+    <div class="add-product">
+      <div class="testbox">
+      <form action="">
+        
+        <div class="item">
+          <p>Product ID</p>
+          <input type="text" name="productid" placeholder="631651656" />
+        </div>
+        <div class="item">
+          <p>Product Name</p>
+          <input type="text" name="productname" placeholder="Product Name" />
+        </div>
+        <div class="item">
+          <p>Product Image</p>
+          <input type="file" id="myFile" name="filename">
+        </div>
+        <div class="item">
+          <p>Description</p>
+          <textarea rows="3" placeholder="Enter Description" name="description" ></textarea>
+        </div>
+        <div class="item">
+          <p>Category</p>
+          <select>
+            <option value="">Select</option>
+            <option value="1">category1</option>
+            <option value="2">category2</option>
+            <option value="3">category3</option>
+            <option value="4">category4</option>
+            <option value="5">category5</option>
+          </select>
+        </div>
+        <div class="item">
+          <p>Sub Category</p>
+          <select>
+            <option value="">Select</option>
+            <option value="1">subcategory1</option>
+            <option value="2">subcategory2</option>
+            <option value="3">subcategory3</option>
+            <option value="4">subcategory4</option>
+            <option value="5">subcategory5</option>
+          </select>
+        </div>
+        <div class="item">
+          <p>Quantity</p>
+          <input type="text" name="quantity"/>
+        </div>
+        <div class="item">
+          <p>Unit</p>
+          <input type="text" name="unit"/>
+        </div>
+        <div class="item">
+          <p>Price</p>
+          <input type="text" name="price"/>
+        </div>
+        <div class="item">
+          <p>Discount</p>
+          <input type="text" name="discount"/>
+        </div>
+                <div class="btn-block">
+          <button type="submit" href="">SEND</button>
+        </div>
+      </form>
+    </div>      
+    </div>
+    
+    
+</body>    
+</html>

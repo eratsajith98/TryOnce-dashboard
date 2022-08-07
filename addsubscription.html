@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>TryOnce Dashboard</title>
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="sidebar">
+    <div class="sidebar-brand">
+        <h2><span class=""></span>TryOnce</h2>
+    </div>    
+    <div class="sidebar-menu">
+        <ul>           
+            <li>
+               <a href="index.html"><span class="las la-igloo"></span><span>Dashboard</span></a>
+            </li>    
+        
+            <li>
+               <a href="customer.html"><span class="las la-user"></span><span>Customers</span></a>
+            </li>    
+        
+            <li>
+               <a href="order.html"><span class="las la-clipboard-list"></span><span>Orders</span></a>
+            </li>    
+        
+            <li>
+               <a href="payment.html"><span class="las la-wallet"></span><span>Payments</span></a>
+            </li>    
+        
+            <li>
+               <a href="product.html"><span class="las la-shopping-bag"></span><span>Products</span></a>
+            </li>    
+        </ul>
+    </div>
+    </div>
+    
+    <div class="main-content">
+    <header>
+        <h2>
+        <label for="">
+                <span class="las la-bars"></span>
+        </label>    
+            Add Subscription
+        </h2>
+    <div class="search-wrapper">
+            <span class="las la-search"></span>
+            <input type="search" placeholder="Search here"   />
+    </div>
+    <div class="user-wrapper">
+            <img src="img/2.png" width="40px" height="40px" alt="">
+    <div>
+            <h4>Sajith Erat</h4>
+            <small>Admin</small>
+    </div>
+    </div>    
+    </header>
+    </div>
+    
+    <div class="add-product">
+      <div class="testbox">
+      <form action="">
+        
+        <div class="item">
+          <p>Product</p>
+          <select>
+            <option value="">Select</option>
+            <option value="1">product1</option>
+            <option value="2">product2</option>
+            <option value="3">product3</option>
+            <option value="4">product4</option>
+            <option value="5">product5</option>
+          </select>
+        </div>
+        <div class="item">
+          <p>Order Quantity</p>
+          <input type="text" name="quantity" placeholder="Quantity" />
+        </div>
+        <div class="item">
+          <p>Select Plan</p>
+          <select>
+            <option value="">Select</option>
+            <option value="1">Everyday</option>
+            <option value="2">Alternate</option>
+            <option value="3">Every 3rd Day</option>
+            <option value="4">Every 7th Day</option>
+            <option value="5"><a href="">Custom</a></option>
+          </select>
+        </div>
+        <div class="btn-block">
+          <button type="submit" href="">Add Subscription</button>
+        </div>
+      </form>
+    </div>      
+    </div>
+    <div class="active-subscription">
+    <h3>Active Plans</h3>
+    <p>Subscription for:<br><br>1000ML Milk X 1 Ltr - Everyday</p>
+    <div class="button-container">
+      <button>Cancel Plan</button>
+    </div>
+    </div>   
+</body>    
+</html>

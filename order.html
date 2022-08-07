@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>TryOnce Dashboard</title>
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="sidebar">
+    <div class="sidebar-brand">
+        <h2><span class=""></span>TryOnce</h2>
+    </div>    
+    <div class="sidebar-menu">
+        <ul>           
+            <li>
+               <a href="index.html" ><span class="las la-igloo"></span><span>Dashboard</span></a>
+            </li>    
+        
+            <li>
+               <a href="customer.html"><span class="las la-user"></span><span>Customers</span></a>
+            </li>    
+        
+            <li>
+               <a href="" class="active"><span class="las la-clipboard-list"></span><span>Orders</span></a>
+            </li>    
+        
+            <li>
+               <a href="payment.html"><span class="las la-wallet"></span><span>Payments</span></a>
+            </li>    
+        
+            <li>
+               <a href="product.html"><span class="las la-shopping-bag"></span><span>Products</span></a>
+            </li>    
+        </ul>
+    </div>
+    </div>
+    
+    <div class="main-content">
+    <header>
+        <h2>
+        <label for="">
+                <span class="las la-bars"></span>
+        </label>    
+            Orders
+        </h2>
+    <div class="search-wrapper">
+            <span class="las la-search"></span>
+            <input type="search" placeholder="Search here"   />
+    </div>
+    <div class="user-wrapper">
+            <img src="img/2.png" width="40px" height="40px" alt="">
+    <div>
+            <h4>Sajith Erat</h4>
+            <small>Admin</small>
+    </div>
+        </div>
+        </header>
+    </div>    
+    <div class="date-picker">
+    <label for="dateofbirth">Date</label>
+<input type="date" name="date" id="date">
+    </div>
+        <div class="customer-region">
+    <span class="las la-map-marker">Region:</span>
+        <select name="region" id="region">
+    <option value="Kadavanthra">Kadavanthra</option>
+    <option value="Thrippunithara">Thrippunithara</option>
+    <option value="Thevara">Thevara</option>
+    <option value="Kalamassery">Kalamassery</option>
+    <option value="Kaloor">Kaloor</option>
+    <option value="Kakkanad">Kakkanad</option>
+  </select>
+            </div>
+
+    
+    
+   <div id="order-table">
+       <table class="order1-table" id="Record">
+  <tr>
+    <th>Sl No</th>
+    <th>Name</th>
+    <th>Product</th>
+    <th>Quantity</th>
+    <th>Status</th>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+   
+</table>
+    </div>
+    
+    <div class="button-export">
+      <button class="button" id="btn">Export</button>
+    </div>
+<script>
+  document.getElementById("btn").addEventListener("click", () => {
+  let tableexcel = new TableExcel();
+  table2excel.export(document.querySelector("#Record"));
+  });
+</script>    
+</body>    
+</html>
